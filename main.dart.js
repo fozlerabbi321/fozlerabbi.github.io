@@ -8367,7 +8367,7 @@ j=1}else j=3
 q.a=k+n
 s+=j
 r=s
-p=!0}else if(o<127&&(B.Lc[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.ce("")
+p=!0}else if(o<127&&(B.Lb[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.ce("")
 if(r<s){q.a+=B.d.a4(a,r,s)
 r=s}p=!1}++s}else if(o<=93&&(B.nr[o>>>4]&1<<(o&15))!==0)A.wf(a,s,"Invalid character")
 else{if((o&64512)===55296&&s+1<c){i=a.charCodeAt(s+1)
@@ -20708,7 +20708,7 @@ q=b.Q
 if(a.Q!==q)return q?-1:1
 return 0},
 aJ4(a,b){var s=A.a1(b).h("a5<1,el>")
-return A.aIp(!0,A.a_(new A.a5(b,new A.a3k(),s),!0,s.h("an.E")),a,B.Lp,!0,B.Ho,null)},
+return A.aIp(!0,A.a_(new A.a5(b,new A.a3k(),s),!0,s.h("an.E")),a,B.Lo,!0,B.Ho,null)},
 aJ2(a){a.ck()
 a.bs(A.aBS())},
 a3V(a){var s=a.a,r=s instanceof A.p9?s:null
@@ -21278,7 +21278,7 @@ _.Q=!0
 _.at=_.as=!1
 _.$ti=d},
 aJT(a,b){var s
-if(a===b)return new A.Ia(B.Ld)
+if(a===b)return new A.Ia(B.Lc)
 s=A.a([],t.fJ)
 a.iv(new A.a6I(b,A.aX("debugDidFindAncestor"),A.aN(t.v),s))
 return new A.Ia(s)},
@@ -26186,7 +26186,7 @@ MY(a,b){var s=A.a([],t.l)
 B.b.G(s,a)
 return new A.eJ(s,b)},
 aCo(a,b){var s,r,q,p
-if(a==="")return A.MY(B.Le,b==null?B.bb:b)
+if(a==="")return A.MY(B.Ld,b==null?B.bb:b)
 s=new A.aeS(a,B.cp,a.length)
 s.rX()
 r=A.a([],t.l)
@@ -26990,7 +26990,7 @@ awF(a){return t.g.a(A.bx(a))},
 awj(a){return a},
 aJZ(a){return a},
 aN3(a){return a},
-avu(a,b){return(B.LH[(a^b)&255]^a>>>8)>>>0},
+avu(a,b){return(B.LG[(a^b)&255]^a>>>8)>>>0},
 rc(a){var s=u.R.charCodeAt(a>>>6)+(a&63),r=s&1,q=u.I.charCodeAt(s>>>1)
 return q>>>4&-r|q&15&r-1},
 kX(a,b){var s=(a&1023)<<10|b&1023,r=u.R.charCodeAt(1024+(s>>>9))+(s&511),q=r&1,p=u.I.charCodeAt(r>>>1)
@@ -27531,7 +27531,7 @@ break
 case 2:o=a.b6()
 break
 case 3:e=a.cd()
-n=e>2||e<0?B.iw:B.KQ[e]
+n=e>2||e<0?B.iw:B.KR[e]
 break
 case 4:m=a.cd()
 break
@@ -31686,7 +31686,7 @@ vc(){var s=this.Q
 s===$&&A.b()
 return s},
 vd(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.Lo
+if(a<0||b<0)return B.Ln
 s=this.a
 s===$&&A.b()
 s=s.a
@@ -38781,7 +38781,7 @@ if(r.e!==B.mN){r.e=B.mN
 r.Mw()}}return r.c.a.Wg(a)},
 Mw(){var s,r
 for(s=this.r,r=0;r<s.length;++r)s[r].$1(this.e)},
-Wf(a){if(B.b.t(B.La,a))return this.e===B.cK
+Wf(a){if(B.b.t(B.L9,a))return this.e===B.cK
 return!1}}
 A.a3T.prototype={
 $0(){return new A.fU(Date.now(),!1)},
@@ -41611,7 +41611,7 @@ n=A.GB(r.i(s,"fontWeightIndex"))
 m=n!=null?A.atP(n):"normal"
 l=A.aAk(r.i(s,"fontSize"))
 if(l==null)l=null
-q=new A.afs(new A.a3e(l,m,A.da(r.i(s,"fontFamily")),B.Ly[p],B.iO[o]))
+q=new A.afs(new A.a3e(l,m,A.da(r.i(s,"fontFamily")),B.Lx[p],B.iO[o]))
 break
 case"TextInput.clearClient":q=B.BG
 break
@@ -49610,7 +49610,7 @@ if(r<0||r>285)return-1
 if(r===256)break
 if(r<256){s.qM(r&255)
 continue}q=r-257
-p=B.L7[q]+l.hX(B.Kq[q])
+p=B.L6[q]+l.hX(B.Kq[q])
 o=l.CH(b)
 if(o<0||o>29)return-1
 n=B.Ku[o]+l.hX(B.KX[o])
@@ -53560,7 +53560,7 @@ a0J(a){var s,r=this,q=null,p=r.a
 p=p.e
 s=r.ga60()
 r.a.toString
-return new A.D7(q,q,q,new A.akS(),q,q,q,q,q,p,B.NT,q,q,q,B.Ll,r.ga69(),"",q,B.TW,B.ba,q,s,q,q,B.nm,!1,!1,!1,!1,r.ga5B(),!1,q,q,q,new A.pf(r,t.bT))},
+return new A.D7(q,q,q,new A.akS(),q,q,q,q,q,p,B.NT,q,q,q,B.Lk,r.ga69(),"",q,B.TW,B.ba,q,s,q,q,B.nm,!1,!1,!1,!1,r.ga5B(),!1,q,q,q,new A.pf(r,t.bT))},
 S(a){var s,r=null,q=A.Km(!1,!1,this.a0J(a),r,r,r,r,!0,r,r,r,new A.akT(),r,r)
 this.a.toString
 s=this.d
@@ -61362,7 +61362,7 @@ Ve(a){var s=this.b,r=s.a.a.Hp(a.ai(0,s.ghJ()))
 if(r==null||s.ghJ().k(0,B.h))return r
 return new A.pg(r.a.d1(s.ghJ()),r.b,r.c)},
 xu(){var s,r,q=this.b,p=q.ghJ()
-if(!isFinite(p.a)||!isFinite(p.b))return B.Lj
+if(!isFinite(p.a)||!isFinite(p.b))return B.Li
 s=q.e
 if(s==null){s=q.a.a.xu()
 q.e=s}if(p.k(0,B.h))r=s
@@ -68150,7 +68150,7 @@ break
 case 1:return A.Q(q,r)}})
 return A.R($async$C2,r)},
 a35(a,b){var s,r,q,p
-if(a===b)return B.Lk
+if(a===b)return B.Lj
 if(a===B.eC&&b===B.dk)return B.Ks
 s=A.a([],t.QP)
 if(a==null)s.push(b)
@@ -72661,7 +72661,7 @@ if(b==null)return!1
 if(J.U(b)!==A.u(s))return!1
 return b instanceof A.ch&&b.a===s.a&&b.b===s.b&&b.c==s.c&&b.d===s.d&&A.cW(null,null)},
 gq(a){var s=this
-return A.H(s.a,s.b,s.c,s.d,A.b5(B.Ln),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.H(s.a,s.b,s.c,s.d,A.b5(B.Lm),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 j(a){return"IconData(U+"+B.d.mk(B.e.hc(this.a,16).toUpperCase(),5,"0")+")"}}
 A.pm.prototype={
 cu(a){return!this.w.k(0,a.w)},
@@ -73390,7 +73390,7 @@ c=g==null?(c.b.a.a.a&64)!==0:g
 g=s&&d
 b=s?d:b.ch
 if(b==null)b=B.jo
-f=new A.zN(a1,a,q,p,l,o,n,a0,g===!0,m,k,h,c,j,i,b,new A.Jr(d),B.Lh)
+f=new A.zN(a1,a,q,p,l,o,n,a0,g===!0,m,k,h,c,j,i,b,new A.Jr(d),B.Lg)
 if(!f.k(0,e.e))e.aE(new A.al9(e,f))},
 QX(){this.t3()},
 QZ(){if(this.d==null)this.t3()},
@@ -73723,7 +73723,7 @@ r.G(0,s.TW(null,k))
 k.a.toString
 q=r.a
 p=0
-for(;!1;++p){o=B.Lm[p]
+for(;!1;++p){o=B.Ll[p]
 n=k.c
 n.toString
 n=o.El(n)
@@ -79056,7 +79056,7 @@ p.x4()
 return s.au()},
 m(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gC4(),p=0;p<s.length;s.length===r||(0,A.G)(s),++p)J.aGZ(s[p],q)
-o.b=B.Li
+o.b=B.Lh
 o.y=!1
 o.dN()},
 fd(a,b){return a.pK(b)},
@@ -83823,7 +83823,7 @@ $ifq:1}
 A.ag.prototype={
 b2(a,b){var s=this.aW(new A.rT(a,b))
 return s.gnH()?s.b:-1},
-geo(a){return B.Lg},
+geo(a){return B.Lf},
 is(a,b,c){}}
 A.m1.prototype={
 gp(a){return this.d-this.c},
@@ -85255,7 +85255,7 @@ ck(){this.el()
 this.dO()
 this.lH()}}
 A.Pc.prototype={
-S(a){return A.qh(null,null,new A.c1(B.ij,A.a7I(B.L6),null))}}
+S(a){return A.qh(null,null,new A.c1(B.ij,A.a7I(B.LH),null))}}
 A.BR.prototype={
 S(a){var s=null
 return new A.c1(B.mD,A.c2(this.c,s,s,B.z3,s),s)}}
@@ -85815,7 +85815,7 @@ if(a!==0)s.scW(B.JL[a])
 if(e!=null)s.siB(this.z[e])
 if(d===1){s.sam(0,B.N)
 if(f!=null&&f!==0)s.son(B.KT[f])
-if(g!=null&&g!==0)s.sAn(B.LA[g])
+if(g!=null&&g!==0)s.sAn(B.Lz[g])
 if(h!=null&&h!==4)s.sAo(h)
 if(i!=null&&i!==0)s.se7(i)}this.x.push(s)},
 ahQ(a,b,c,d,e,f,g,h){var s,r,q=A.a([],t.W)
@@ -87349,7 +87349,7 @@ case"round":return B.Sk
 default:return null}},
 a7h(a){var s,r,q,p,o,n,m
 if(a==null||a==="")return null
-else if(a==="none")return B.Lf
+else if(a==="none")return B.Le
 s=J.av3(a,A.cz("[ ,]+",!0,!1))
 r=A.a([],t.n)
 for(q=s.length,p=this.a,o=!1,n=0;n<s.length;s.length===q||(0,A.G)(s),++n){m=A.dv(s[n],p,!1)
@@ -91716,7 +91716,7 @@ B.H=new A.agc()
 B.ar=new A.agd()
 B.cE=new A.agh()
 B.da=new A.Qu(0,0,0,0)
-B.Lh=A.a(s([]),A.a6("p<a2E>"))
+B.Lg=A.a(s([]),A.a6("p<a2E>"))
 B.Zq=new A.agk()
 B.b_={}
 B.fx=new A.bm(B.b_,[],t.li)
@@ -92315,8 +92315,8 @@ B.ct=new A.qH(3,"decal")
 B.ni=A.a(s([B.R,B.et,B.eu,B.ct]),A.a6("p<qH>"))
 B.Kb=A.a(s([23,114,69,56,80,144]),t.t)
 B.Ka=A.a(s([49,65,89,38,83,89]),t.t)
-B.L8=A.a(s([137,80,78,71,13,10,26,10]),t.Z)
-B.J1=new A.lo(B.L8,"image/png")
+B.L7=A.a(s([137,80,78,71,13,10,26,10]),t.Z)
+B.J1=new A.lo(B.L7,"image/png")
 B.Kc=A.a(s([71,73,70,56,55,97]),t.Z)
 B.J5=new A.lo(B.Kc,"image/gif")
 B.Kd=A.a(s([71,73,70,56,57,97]),t.Z)
@@ -92355,7 +92355,7 @@ B.Og=new A.lw(5,"unknown")
 B.KG=A.a(s([B.jm,B.Of,B.jn,B.tH,B.tI,B.Og]),A.a6("p<lw>"))
 B.Jp=new A.tE(0,"leftAlign")
 B.Jq=new A.tE(1,"rightAlign")
-B.KQ=A.a(s([B.Jp,B.Jq,B.iw]),A.a6("p<tE>"))
+B.KR=A.a(s([B.Jp,B.Jq,B.iw]),A.a6("p<tE>"))
 B.LV=new A.kc("en","US")
 B.nm=A.a(s([B.LV]),t.ss)
 B.fj=A.a(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
@@ -92399,41 +92399,34 @@ B.AK=new A.rn()
 B.jN=new A.OJ(1,"page")
 B.jO=new A.fA(B.T,B.jN)
 B.L5=A.a(s([B.AK,B.jO]),A.a6("p<b4>"))
-B.QB=new A.BR("Top Skills",null)
-B.Lt=A.a(s(["Dart","Java","Flutter SDK","Android Native SDK","Flutter for iOS"]),t.s)
-B.S3=new A.Cd(B.Lt,null)
-B.QC=new A.BR("Other Skills & Technologies",null)
-B.KR=A.a(s(["Flutter BloC, GetX","BloC & MVC clean architecture pattern","MVVM design pattern (Android SDK)","RxDart","Rest API Integration","Firebase (Android & Flutter)","Firebase","Write clean, scalable code","Hive (Flutter)","SQLite","http (Flutter)","Work Manager","Onesignal Notification","WooCommerce Setup with Integration REST API (Flutter and Android SDK)","WordPress Setup with Integration REST API","Stripe and SSL Commerce Gateway","Figma and XD to XML and Flutter","Git Version Control","Flutter Unit & Widget Test","Google Maps","Third party libraries for Android SDK","Third party"]),t.s)
-B.S4=new A.Cd(B.KR,null)
-B.L6=A.a(s([B.QB,B.S3,B.QC,B.S4]),t.p)
-B.L7=A.a(s([3,4,5,6,7,8,9,10,11,13,15,17,19,23,27,31,35,43,51,59,67,83,99,115,131,163,195,227,258]),t.t)
+B.L6=A.a(s([3,4,5,6,7,8,9,10,11,13,15,17,19,23,27,31,35,43,51,59,67,83,99,115,131,163,195,227,258]),t.t)
 B.nq=A.a(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
 B.nr=A.a(s([0,0,32776,33792,1,10240,0,0]),t.t)
 B.dS=A.a(s([0,79764919,159529838,222504665,319059676,398814059,445009330,507990021,638119352,583659535,797628118,726387553,890018660,835552979,1015980042,944750013,1276238704,1221641927,1167319070,1095957929,1595256236,1540665371,1452775106,1381403509,1780037320,1859660671,1671105958,1733955601,2031960084,2111593891,1889500026,1952343757,2552477408,2632100695,2443283854,2506133561,2334638140,2414271883,2191915858,2254759653,3190512472,3135915759,3081330742,3009969537,2905550212,2850959411,2762807018,2691435357,3560074640,3505614887,3719321342,3648080713,3342211916,3287746299,3467911202,3396681109,4063920168,4143685023,4223187782,4286162673,3779000052,3858754371,3904687514,3967668269,881225847,809987520,1023691545,969234094,662832811,591600412,771767749,717299826,311336399,374308984,453813921,533576470,25881363,88864420,134795389,214552010,2023205639,2086057648,1897238633,1976864222,1804852699,1867694188,1645340341,1724971778,1587496639,1516133128,1461550545,1406951526,1302016099,1230646740,1142491917,1087903418,2896545431,2825181984,2770861561,2716262478,3215044683,3143675388,3055782693,3001194130,2326604591,2389456536,2200899649,2280525302,2578013683,2640855108,2418763421,2498394922,3769900519,3832873040,3912640137,3992402750,4088425275,4151408268,4197601365,4277358050,3334271071,3263032808,3476998961,3422541446,3585640067,3514407732,3694837229,3640369242,1762451694,1842216281,1619975040,1682949687,2047383090,2127137669,1938468188,2001449195,1325665622,1271206113,1183200824,1111960463,1543535498,1489069629,1434599652,1363369299,622672798,568075817,748617968,677256519,907627842,853037301,1067152940,995781531,51762726,131386257,177728840,240578815,269590778,349224269,429104020,491947555,4046411278,4126034873,4172115296,4234965207,3794477266,3874110821,3953728444,4016571915,3609705398,3555108353,3735388376,3664026991,3290680682,3236090077,3449943556,3378572211,3174993278,3120533705,3032266256,2961025959,2923101090,2868635157,2813903052,2742672763,2604032198,2683796849,2461293480,2524268063,2284983834,2364738477,2175806836,2238787779,1569362073,1498123566,1409854455,1355396672,1317987909,1246755826,1192025387,1137557660,2072149281,2135122070,1912620623,1992383480,1753615357,1816598090,1627664531,1707420964,295390185,358241886,404320391,483945776,43990325,106832002,186451547,266083308,932423249,861060070,1041341759,986742920,613929101,542559546,756411363,701822548,3316196985,3244833742,3425377559,3370778784,3601682597,3530312978,3744426955,3689838204,3819031489,3881883254,3928223919,4007849240,4037393693,4100235434,4180117107,4259748804,2310601993,2373574846,2151335527,2231098320,2596047829,2659030626,2470359227,2550115596,2947551409,2876312838,2788305887,2733848168,3165939309,3094707162,3040238851,2985771188]),t.t)
-B.La=A.a(s(["click","scroll"]),t.s)
-B.Lc=A.a(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
-B.Lk=A.a(s([]),t.QP)
+B.L9=A.a(s(["click","scroll"]),t.s)
+B.Lb=A.a(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
+B.Lj=A.a(s([]),t.QP)
 B.nt=A.a(s([]),A.a6("p<aUS>"))
-B.Lp=A.a(s([]),t.E)
-B.Ld=A.a(s([]),t.fJ)
-B.Lj=A.a(s([]),t.ER)
-B.Ll=A.a(s([]),t.tc)
+B.Lo=A.a(s([]),t.E)
+B.Lc=A.a(s([]),t.fJ)
+B.Li=A.a(s([]),t.ER)
+B.Lk=A.a(s([]),t.tc)
 B.fk=A.a(s([]),t.jl)
 B.nu=A.a(s([]),t.fy)
-B.Lm=A.a(s([]),A.a6("p<as3<@>>"))
-B.Lg=A.a(s([]),t.C)
-B.Le=A.a(s([]),t.l)
+B.Ll=A.a(s([]),A.a6("p<as3<@>>"))
+B.Lf=A.a(s([]),t.C)
+B.Ld=A.a(s([]),t.l)
 B.iP=A.a(s([]),t.AO)
-B.Li=A.a(s([]),t.D1)
+B.Lh=A.a(s([]),t.D1)
 B.iQ=A.a(s([]),t.QF)
 B.ns=A.a(s([]),t.s)
 B.ae=A.a(s([]),t.oU)
-B.Lo=A.a(s([]),t.Lx)
+B.Ln=A.a(s([]),t.Lx)
 B.Zx=A.a(s([]),t.p)
-B.Lf=A.a(s([]),t.n)
+B.Le=A.a(s([]),t.n)
 B.cQ=A.a(s([]),t.t)
 B.o=A.a(s([]),t.ee)
-B.Ln=A.a(s([]),t.XS)
+B.Lm=A.a(s([]),t.XS)
 B.dT=A.a(s([619,720,127,481,931,816,813,233,566,247,985,724,205,454,863,491,741,242,949,214,733,859,335,708,621,574,73,654,730,472,419,436,278,496,867,210,399,680,480,51,878,465,811,169,869,675,611,697,867,561,862,687,507,283,482,129,807,591,733,623,150,238,59,379,684,877,625,169,643,105,170,607,520,932,727,476,693,425,174,647,73,122,335,530,442,853,695,249,445,515,909,545,703,919,874,474,882,500,594,612,641,801,220,162,819,984,589,513,495,799,161,604,958,533,221,400,386,867,600,782,382,596,414,171,516,375,682,485,911,276,98,553,163,354,666,933,424,341,533,870,227,730,475,186,263,647,537,686,600,224,469,68,770,919,190,373,294,822,808,206,184,943,795,384,383,461,404,758,839,887,715,67,618,276,204,918,873,777,604,560,951,160,578,722,79,804,96,409,713,940,652,934,970,447,318,353,859,672,112,785,645,863,803,350,139,93,354,99,820,908,609,772,154,274,580,184,79,626,630,742,653,282,762,623,680,81,927,626,789,125,411,521,938,300,821,78,343,175,128,250,170,774,972,275,999,639,495,78,352,126,857,956,358,619,580,124,737,594,701,612,669,112,134,694,363,992,809,743,168,974,944,375,748,52,600,747,642,182,862,81,344,805,988,739,511,655,814,334,249,515,897,955,664,981,649,113,974,459,893,228,433,837,553,268,926,240,102,654,459,51,686,754,806,760,493,403,415,394,687,700,946,670,656,610,738,392,760,799,887,653,978,321,576,617,626,502,894,679,243,440,680,879,194,572,640,724,926,56,204,700,707,151,457,449,797,195,791,558,945,679,297,59,87,824,713,663,412,693,342,606,134,108,571,364,631,212,174,643,304,329,343,97,430,751,497,314,983,374,822,928,140,206,73,263,980,736,876,478,430,305,170,514,364,692,829,82,855,953,676,246,369,970,294,750,807,827,150,790,288,923,804,378,215,828,592,281,565,555,710,82,896,831,547,261,524,462,293,465,502,56,661,821,976,991,658,869,905,758,745,193,768,550,608,933,378,286,215,979,792,961,61,688,793,644,986,403,106,366,905,644,372,567,466,434,645,210,389,550,919,135,780,773,635,389,707,100,626,958,165,504,920,176,193,713,857,265,203,50,668,108,645,990,626,197,510,357,358,850,858,364,936,638]),t.t)
 B.h6=new A.m0(0,"left")
 B.kj=new A.m0(1,"right")
@@ -92441,11 +92434,11 @@ B.kk=new A.m0(2,"center")
 B.h7=new A.m0(3,"justify")
 B.aF=new A.m0(4,"start")
 B.kl=new A.m0(5,"end")
-B.Ly=A.a(s([B.h6,B.kj,B.kk,B.h7,B.aF,B.kl]),A.a6("p<m0>"))
+B.Lx=A.a(s([B.h6,B.kj,B.kk,B.h7,B.aF,B.kl]),A.a6("p<m0>"))
 B.d7=new A.uT(0,"miter")
 B.yJ=new A.uT(1,"round")
 B.yK=new A.uT(2,"bevel")
-B.LA=A.a(s([B.d7,B.yJ,B.yK]),A.a6("p<uT>"))
+B.Lz=A.a(s([B.d7,B.yJ,B.yK]),A.a6("p<uT>"))
 B.cV=new A.o(1,0)
 B.tT=new A.o(1,1)
 B.fC=new A.o(0,1)
@@ -92455,7 +92448,7 @@ B.P8=new A.o(-1,-1)
 B.tS=new A.o(0,-1)
 B.OW=new A.o(1,-1)
 B.fl=A.a(s([B.cV,B.tT,B.fC,B.P7,B.tU,B.P8,B.tS,B.OW]),t.yv)
-B.LH=A.a(s([0,1996959894,3993919788,2567524794,124634137,1886057615,3915621685,2657392035,249268274,2044508324,3772115230,2547177864,162941995,2125561021,3887607047,2428444049,498536548,1789927666,4089016648,2227061214,450548861,1843258603,4107580753,2211677639,325883990,1684777152,4251122042,2321926636,335633487,1661365465,4195302755,2366115317,997073096,1281953886,3579855332,2724688242,1006888145,1258607687,3524101629,2768942443,901097722,1119000684,3686517206,2898065728,853044451,1172266101,3705015759,2882616665,651767980,1373503546,3369554304,3218104598,565507253,1454621731,3485111705,3099436303,671266974,1594198024,3322730930,2970347812,795835527,1483230225,3244367275,3060149565,1994146192,31158534,2563907772,4023717930,1907459465,112637215,2680153253,3904427059,2013776290,251722036,2517215374,3775830040,2137656763,141376813,2439277719,3865271297,1802195444,476864866,2238001368,4066508878,1812370925,453092731,2181625025,4111451223,1706088902,314042704,2344532202,4240017532,1658658271,366619977,2362670323,4224994405,1303535960,984961486,2747007092,3569037538,1256170817,1037604311,2765210733,3554079995,1131014506,879679996,2909243462,3663771856,1141124467,855842277,2852801631,3708648649,1342533948,654459306,3188396048,3373015174,1466479909,544179635,3110523913,3462522015,1591671054,702138776,2966460450,3352799412,1504918807,783551873,3082640443,3233442989,3988292384,2596254646,62317068,1957810842,3939845945,2647816111,81470997,1943803523,3814918930,2489596804,225274430,2053790376,3826175755,2466906013,167816743,2097651377,4027552580,2265490386,503444072,1762050814,4150417245,2154129355,426522225,1852507879,4275313526,2312317920,282753626,1742555852,4189708143,2394877945,397917763,1622183637,3604390888,2714866558,953729732,1340076626,3518719985,2797360999,1068828381,1219638859,3624741850,2936675148,906185462,1090812512,3747672003,2825379669,829329135,1181335161,3412177804,3160834842,628085408,1382605366,3423369109,3138078467,570562233,1426400815,3317316542,2998733608,733239954,1555261956,3268935591,3050360625,752459403,1541320221,2607071920,3965973030,1969922972,40735498,2617837225,3943577151,1913087877,83908371,2512341634,3803740692,2075208622,213261112,2463272603,3855990285,2094854071,198958881,2262029012,4057260610,1759359992,534414190,2176718541,4139329115,1873836001,414664567,2282248934,4279200368,1711684554,285281116,2405801727,4167216745,1634467795,376229701,2685067896,3608007406,1308918612,956543938,2808555105,3495958263,1231636301,1047427035,2932959818,3654703836,1088359270,936918e3,2847714899,3736837829,1202900863,817233897,3183342108,3401237130,1404277552,615818150,3134207493,3453421203,1423857449,601450431,3009837614,3294710456,1567103746,711928724,3020668471,3272380065,1510334235,755167117]),t.t)
+B.LG=A.a(s([0,1996959894,3993919788,2567524794,124634137,1886057615,3915621685,2657392035,249268274,2044508324,3772115230,2547177864,162941995,2125561021,3887607047,2428444049,498536548,1789927666,4089016648,2227061214,450548861,1843258603,4107580753,2211677639,325883990,1684777152,4251122042,2321926636,335633487,1661365465,4195302755,2366115317,997073096,1281953886,3579855332,2724688242,1006888145,1258607687,3524101629,2768942443,901097722,1119000684,3686517206,2898065728,853044451,1172266101,3705015759,2882616665,651767980,1373503546,3369554304,3218104598,565507253,1454621731,3485111705,3099436303,671266974,1594198024,3322730930,2970347812,795835527,1483230225,3244367275,3060149565,1994146192,31158534,2563907772,4023717930,1907459465,112637215,2680153253,3904427059,2013776290,251722036,2517215374,3775830040,2137656763,141376813,2439277719,3865271297,1802195444,476864866,2238001368,4066508878,1812370925,453092731,2181625025,4111451223,1706088902,314042704,2344532202,4240017532,1658658271,366619977,2362670323,4224994405,1303535960,984961486,2747007092,3569037538,1256170817,1037604311,2765210733,3554079995,1131014506,879679996,2909243462,3663771856,1141124467,855842277,2852801631,3708648649,1342533948,654459306,3188396048,3373015174,1466479909,544179635,3110523913,3462522015,1591671054,702138776,2966460450,3352799412,1504918807,783551873,3082640443,3233442989,3988292384,2596254646,62317068,1957810842,3939845945,2647816111,81470997,1943803523,3814918930,2489596804,225274430,2053790376,3826175755,2466906013,167816743,2097651377,4027552580,2265490386,503444072,1762050814,4150417245,2154129355,426522225,1852507879,4275313526,2312317920,282753626,1742555852,4189708143,2394877945,397917763,1622183637,3604390888,2714866558,953729732,1340076626,3518719985,2797360999,1068828381,1219638859,3624741850,2936675148,906185462,1090812512,3747672003,2825379669,829329135,1181335161,3412177804,3160834842,628085408,1382605366,3423369109,3138078467,570562233,1426400815,3317316542,2998733608,733239954,1555261956,3268935591,3050360625,752459403,1541320221,2607071920,3965973030,1969922972,40735498,2617837225,3943577151,1913087877,83908371,2512341634,3803740692,2075208622,213261112,2463272603,3855990285,2094854071,198958881,2262029012,4057260610,1759359992,534414190,2176718541,4139329115,1873836001,414664567,2282248934,4279200368,1711684554,285281116,2405801727,4167216745,1634467795,376229701,2685067896,3608007406,1308918612,956543938,2808555105,3495958263,1231636301,1047427035,2932959818,3654703836,1088359270,936918e3,2847714899,3736837829,1202900863,817233897,3183342108,3401237130,1404277552,615818150,3134207493,3453421203,1423857449,601450431,3009837614,3294710456,1567103746,711928724,3020668471,3272380065,1510334235,755167117]),t.t)
 B.fm=A.a(s([0,0,65490,45055,65535,34815,65534,18431]),t.t)
 B.e3=new A.hA(0,"controlModifier")
 B.e4=new A.hA(1,"shiftModifier")
@@ -92467,6 +92460,13 @@ B.tN=new A.hA(6,"scrollLockModifier")
 B.tO=new A.hA(7,"functionModifier")
 B.Oq=new A.hA(8,"symbolModifier")
 B.nv=A.a(s([B.e3,B.e4,B.e5,B.e6,B.tL,B.tM,B.tN,B.tO,B.Oq]),A.a6("p<hA>"))
+B.QB=new A.BR("Top Skills",null)
+B.Ls=A.a(s(["Dart","Java","Flutter SDK","Android Native SDK","Flutter for iOS"]),t.s)
+B.S3=new A.Cd(B.Ls,null)
+B.QC=new A.BR("Other Skills & Technologies",null)
+B.KI=A.a(s(["Flutter BloC, GetX","BloC & MVC clean architecture pattern","MVVM design pattern (Android SDK)","RxDart","Rest API Integration","video steaming (HLS)","Deep knowledge of Video Player","Firebase (Android & Flutter)","Firebase","Write clean, scalable code","Hive (Flutter)","SQLite","http (Flutter)","Work Manager","Onesignal Notification","WooCommerce Setup with Integration REST API (Flutter and Android SDK)","WordPress Setup with Integration REST API","Stripe and SSL Commerce Gateway","Figma and XD to XML and Flutter","Git Version Control","Flutter Unit & Widget Test","Google Maps","Third party libraries for Android SDK","Third party"]),t.s)
+B.S4=new A.Cd(B.KI,null)
+B.LH=A.a(s([B.QB,B.S3,B.QC,B.S4]),t.p)
 B.bD=A.a(s([0,0,26498,1023,65534,34815,65534,18431]),t.t)
 B.T7=new A.kE(0,"solid")
 B.yS=new A.kE(1,"double")
@@ -93521,39 +93521,39 @@ B.K_=A.a(s([4294968071,null,null,8589935155]),t.Z)
 B.K0=A.a(s([4294968072,null,null,8589935161]),t.Z)
 B.KC=A.a(s([8589934850,8589934850,8589934851,null]),t.Z)
 B.tx=new A.bL(["*",B.K3,"+",B.K4,"-",B.K5,".",B.K6,"/",B.K7,"0",B.K8,"1",B.K9,"2",B.Kg,"3",B.Kh,"4",B.Ki,"5",B.Kj,"6",B.Kk,"7",B.Kl,"8",B.Km,"9",B.Kn,"Alt",B.Kz,"AltGraph",B.JT,"ArrowDown",B.JU,"ArrowLeft",B.JV,"ArrowRight",B.JW,"ArrowUp",B.JX,"Clear",B.K1,"Control",B.KA,"Delete",B.JS,"End",B.JY,"Enter",B.JR,"Home",B.JZ,"Insert",B.K2,"Meta",B.KB,"PageDown",B.K_,"PageUp",B.K0,"Shift",B.KC],A.a6("bL<i,A<l?>>"))
-B.LB=A.a(s([B.nE,null,null,B.tk]),t.L)
-B.LC=A.a(s([B.t6,null,null,B.tl]),t.L)
-B.LD=A.a(s([B.t7,null,null,B.tm]),t.L)
-B.LE=A.a(s([B.t8,null,null,B.j1]),t.L)
-B.LF=A.a(s([B.t9,null,null,B.tn]),t.L)
-B.KI=A.a(s([B.ta,null,null,B.j2]),t.L)
-B.KJ=A.a(s([B.tb,null,null,B.j3]),t.L)
-B.KK=A.a(s([B.tc,null,null,B.j4]),t.L)
-B.KL=A.a(s([B.td,null,null,B.j5]),t.L)
-B.KM=A.a(s([B.te,null,null,B.j6]),t.L)
-B.KN=A.a(s([B.tf,null,null,B.j7]),t.L)
-B.KO=A.a(s([B.tg,null,null,B.j8]),t.L)
-B.KP=A.a(s([B.th,null,null,B.j9]),t.L)
+B.LA=A.a(s([B.nE,null,null,B.tk]),t.L)
+B.LB=A.a(s([B.t6,null,null,B.tl]),t.L)
+B.LC=A.a(s([B.t7,null,null,B.tm]),t.L)
+B.LD=A.a(s([B.t8,null,null,B.j1]),t.L)
+B.LE=A.a(s([B.t9,null,null,B.tn]),t.L)
+B.KJ=A.a(s([B.ta,null,null,B.j2]),t.L)
+B.KK=A.a(s([B.tb,null,null,B.j3]),t.L)
+B.KL=A.a(s([B.tc,null,null,B.j4]),t.L)
+B.KM=A.a(s([B.td,null,null,B.j5]),t.L)
+B.KN=A.a(s([B.te,null,null,B.j6]),t.L)
+B.KO=A.a(s([B.tf,null,null,B.j7]),t.L)
+B.KP=A.a(s([B.tg,null,null,B.j8]),t.L)
+B.KQ=A.a(s([B.th,null,null,B.j9]),t.L)
 B.LR=A.a(s([B.ti,null,null,B.ja]),t.L)
 B.LS=A.a(s([B.tj,null,null,B.jb]),t.L)
-B.Lu=A.a(s([B.e0,B.e0,B.ft,null]),t.L)
+B.Lt=A.a(s([B.e0,B.e0,B.ft,null]),t.L)
 B.LT=A.a(s([B.fp,null,B.fp,null]),t.L)
 B.KY=A.a(s([B.bj,null,null,B.j4]),t.L)
 B.KZ=A.a(s([B.b8,null,null,B.j6]),t.L)
 B.L_=A.a(s([B.b9,null,null,B.j8]),t.L)
-B.Lb=A.a(s([B.bk,null,null,B.ja]),t.L)
-B.Lq=A.a(s([B.iV,null,null,B.j7]),t.L)
-B.Lv=A.a(s([B.dZ,B.dZ,B.fs,null]),t.L)
+B.La=A.a(s([B.bk,null,null,B.ja]),t.L)
+B.Lp=A.a(s([B.iV,null,null,B.j7]),t.L)
+B.Lu=A.a(s([B.dZ,B.dZ,B.fs,null]),t.L)
 B.KF=A.a(s([B.aI,null,null,B.j1]),t.L)
 B.L0=A.a(s([B.cg,null,null,B.j3]),t.L)
-B.LG=A.a(s([B.fo,null,null,B.j0]),t.L)
+B.LF=A.a(s([B.fo,null,null,B.j0]),t.L)
 B.L1=A.a(s([B.ch,null,null,B.j9]),t.L)
-B.Lr=A.a(s([B.iW,null,null,B.j2]),t.L)
-B.Lw=A.a(s([B.e1,B.e1,B.fu,null]),t.L)
+B.Lq=A.a(s([B.iW,null,null,B.j2]),t.L)
+B.Lv=A.a(s([B.e1,B.e1,B.fu,null]),t.L)
 B.L2=A.a(s([B.dX,null,null,B.j5]),t.L)
-B.Ls=A.a(s([B.dY,null,null,B.jb]),t.L)
-B.Lx=A.a(s([B.cR,B.cR,B.e_,null]),t.L)
-B.NY=new A.bL(["*",B.LB,"+",B.LC,"-",B.LD,".",B.LE,"/",B.LF,"0",B.KI,"1",B.KJ,"2",B.KK,"3",B.KL,"4",B.KM,"5",B.KN,"6",B.KO,"7",B.KP,"8",B.LR,"9",B.LS,"Alt",B.Lu,"AltGraph",B.LT,"ArrowDown",B.KY,"ArrowLeft",B.KZ,"ArrowRight",B.L_,"ArrowUp",B.Lb,"Clear",B.Lq,"Control",B.Lv,"Delete",B.KF,"End",B.L0,"Enter",B.LG,"Home",B.L1,"Insert",B.Lr,"Meta",B.Lw,"PageDown",B.L2,"PageUp",B.Ls,"Shift",B.Lx],A.a6("bL<i,A<h?>>"))
+B.Lr=A.a(s([B.dY,null,null,B.jb]),t.L)
+B.Lw=A.a(s([B.cR,B.cR,B.e_,null]),t.L)
+B.NY=new A.bL(["*",B.LA,"+",B.LB,"-",B.LC,".",B.LD,"/",B.LE,"0",B.KJ,"1",B.KK,"2",B.KL,"3",B.KM,"4",B.KN,"5",B.KO,"6",B.KP,"7",B.KQ,"8",B.LR,"9",B.LS,"Alt",B.Lt,"AltGraph",B.LT,"ArrowDown",B.KY,"ArrowLeft",B.KZ,"ArrowRight",B.L_,"ArrowUp",B.La,"Clear",B.Lp,"Control",B.Lu,"Delete",B.KF,"End",B.L0,"Enter",B.LF,"Home",B.L1,"Insert",B.Lq,"Meta",B.Lv,"PageDown",B.L2,"PageUp",B.Lr,"Shift",B.Lw],A.a6("bL<i,A<h?>>"))
 B.OJ={multiply:0,screen:1,overlay:2,darken:3,lighten:4,"color-dodge":5,"color-burn":6,"hard-light":7,"soft-light":8,difference:9,exclusion:10,hue:11,saturation:12,color:13,luminosity:14}
 B.Af=new A.e6(24,"multiply")
 B.zX=new A.e6(14,"screen")
@@ -94083,16 +94083,16 @@ B.cp=new A.dp(0,"unknown")
 B.ma=new A.m(4289687812)
 B.F6=new A.m(4292651777)
 B.EH=new A.m(4290485248)
-B.L9=A.a(s([B.ma,B.F6,B.EH,B.ma]),t.W)
+B.L8=A.a(s([B.ma,B.F6,B.EH,B.ma]),t.W)
 B.iL=A.a(s([0,0.3,0.6,1]),t.n)
 B.mS=new A.yI(2)
-B.SU=new A.jl(B.D,1.57,6.28,B.R,B.L9,B.iL,B.mS)
+B.SU=new A.jl(B.D,1.57,6.28,B.R,B.L8,B.iL,B.mS)
 B.CN=new A.m(4278354803)
 B.CA=new A.m(4278228348)
 B.CL=new A.m(4278298500)
 B.CC=new A.m(4278237834)
-B.Lz=A.a(s([B.CN,B.CA,B.CL,B.CC]),t.W)
-B.SV=new A.jl(B.D,1.57,6.28,B.R,B.Lz,B.iL,B.mS)
+B.Ly=A.a(s([B.CN,B.CA,B.CL,B.CC]),t.W)
+B.SV=new A.jl(B.D,1.57,6.28,B.R,B.Ly,B.iL,B.mS)
 B.Dc=new A.m(4281730830)
 B.Fe=new A.m(4293032570)
 B.En=new A.m(4288822856)
@@ -95319,11 +95319,11 @@ s($,"aWc","aq7",()=>A.awr())
 r($,"aZG","a_d",()=>A.a([A.aqW(B.IA,$.auK()),A.aqW(B.IM,$.aGg()),A.aqW(B.II,$.auL())],A.a6("p<Js>")))
 r($,"aZC","H5",()=>A.a([A.xq(B.tE,B.SW,"assets/images/red.svg"),A.xq(B.ba,B.JG,"assets/images/blue.svg"),A.xq(B.O8,B.SU,"assets/images/gold.svg"),A.xq(B.tC,B.JF,"assets/images/night.svg"),A.xq(B.O9,B.SV,"assets/images/green.svg"),A.xq(B.O4,B.JH,"assets/images/neon.svg")],A.a6("p<IR>")))
 r($,"aZw","a_b",()=>{var q=null
-return A.a([A.iK(B.j,B.IN,q,B.zG,"About"),A.iK(B.j,B.IT,q,B.S2,"Skills"),A.iK(B.j,B.IV,"https://www.linkedin.com/in/fozle-rabbi-8046281a3/",q,"LinkedIN"),A.iK(B.j,B.IP,"https://github.com/fozlerabbi321",q,"Github"),A.iK(B.j,B.IU,q,B.Jn,"Experience"),A.iK(B.j,B.IQ,"https://drive.google.com/file/d/1Q3kx3O0pQfwlcmzNHnPsavLDL8jDV2YU/view?usp=sharing",q,"Resume"),A.iK(B.j,B.IL,q,B.Q6,"Portfolio"),A.iK(B.j,B.n_,q,B.I7,"Education"),A.iK(B.j,B.IR,"https://x.com/fozlerabbi.on",q,"Twitter"),A.iK(B.j,B.IW,"https://www.behance.net/fozlerabbi.on",q,"Behance"),A.iK(B.j,B.IS,"https://linktr.ee/fozlerabbi.on",q,"LinkTree"),A.iK(B.j,B.IO,q,new A.yB(q),"TicTac")],A.a6("p<Hv>"))})
+return A.a([A.iK(B.j,B.IN,q,B.zG,"About"),A.iK(B.j,B.IT,q,B.S2,"Skills"),A.iK(B.j,B.IV,"https://www.linkedin.com/in/fozle-rabbi-8046281a3/",q,"LinkedIN"),A.iK(B.j,B.IP,"https://github.com/fozlerabbi321",q,"Github"),A.iK(B.j,B.IU,q,B.Jn,"Experience"),A.iK(B.j,B.IQ,"https://drive.google.com/file/d/1OaMTOg9VTR_JrjxoRBbBWT7fcgpjJ3am/view?usp=sharing",q,"Resume"),A.iK(B.j,B.IL,q,B.Q6,"Portfolio"),A.iK(B.j,B.n_,q,B.I7,"Education"),A.iK(B.j,B.IR,"https://x.com/fozlerabbi.on",q,"Twitter"),A.iK(B.j,B.IW,"https://www.behance.net/fozlerabbi.on",q,"Behance"),A.iK(B.j,B.IS,"https://linktr.ee/fozlerabbi.on",q,"LinkTree"),A.iK(B.j,B.IO,q,new A.yB(q),"TicTac")],A.a6("p<Hv>"))})
 s($,"aZH","auJ",()=>{var q=t.s
 return A.a([A.Lb(A.a(["Currently in the 3nd year of my University!"],q),B.ba,"Dhaka International University","Present","Badda, Dhaka, Bangladesh","Jan 2022","Computer Science and Engineering"),A.Lb(A.a(["Some of the best years of life"],q),B.tE,"Kurigram Polytechnic Institute, kurigram","Feb 2021","Kurigram, Rangpur","August 2016","Diploma in Engineering")],A.a6("p<zb>"))})
 s($,"aZP","auM",()=>{var q=t.s
-return A.a([A.Lb(A.a(["\ud83d\udcf1 - Developing Flutter Application (Android, iOS)","\ud83c\udf10 - Integrating Restful & third party ApI","\ud83c\udf1f - Integrating all Google APIs & Services","\ud83d\udce1 - Implementing video steaming (HLS)","\ud83c\udf1f - Implementing most of Firebase Services","\ud83d\udce2 - Push & Local Notifications","\ud83d\uddc4\ufe0f - Implementing Local Database (Hive, SQLite)","\ud83d\udcb3 - Implementing Payment Gateways","\ud83d\udcc8 - Small to Large scale Application","\ud83c\udfa8 - Working On Mahfil App","\ud83d\uddbc\ufe0f - Pixel Perfect Flutter Design","\ud83d\ude80 - Release & Maintain Apps for Google Play & App Store","\ud83e\udde9 - Flutter Bloc, GetX, etc."],q),B.ba,"Qtec Solution Limited","Present","Nikunja-2, Khilkhet, Dhaka","October 2022","Senior Software Engineer"),A.Lb(A.a(["As an Android Developer at Akaar IT Limited, I was responsible for designing, developing, and maintaining mobile applications for the Android platform. My key responsibilities included:","Collaborating with cross-functional teams to define, design, and ship new features.","Writing clean, maintainable code and ensuring the best possible performance, quality, and responsiveness of applications.","Troubleshooting and debugging to optimize performance.","Staying up-to-date with the latest industry trends and technologies to ensure our applications remain current and competitive."," Participating in code reviews to maintain code quality and share knowledge with the team."],q),B.ba,"Akaar IT Limited","September 2022","Sector-3, Uttara, Dhaka","April 2021","Mobile App Developer"),A.Lb(A.a(["This role was pivotal in my journey, providing me with the opportunity to collaborate with cross-functional teams and adapt to a structured workplace setting, It was a great journey with Zamzam Digital Ltd."],q),B.ba,"Zamzam Digital Limited","March 2021","Mirpur-10, Dhaka-1216","December 2020","Android App Developer")],A.a6("p<zb>"))})
+return A.a([A.Lb(A.a(["\ud83d\udcf1 - Developing Flutter Application (Android, iOS)","\ud83c\udf10 - Integrating Restful & third party ApI","\ud83c\udf1f - Integrating all Google APIs & Services","\ud83d\udce1 - Implementing video steaming (HLS)","\ud83c\udf1f - Implementing most of Firebase Services","\ud83d\udce2 - Push & Local Notifications","\ud83d\uddc4\ufe0f - Implementing Local Database (Hive, SQLite)","\ud83d\udcb3 - Implementing Payment Gateways","\ud83d\udcc8 - Small to Large scale Application","\ud83d\uddbc\ufe0f - Pixel Perfect Flutter Design","\ud83d\ude80 - Release & Maintain Apps for Google Play & App Store","\ud83e\udde9 - Flutter Bloc, GetX, etc."],q),B.ba,"Qtec Solution Limited","Present","Nikunja-2, Khilkhet, Dhaka","October 2022","Senior Software Engineer"),A.Lb(A.a(["As an Android Developer at Akaar IT Limited, I was responsible for designing, developing, and maintaining mobile applications for the Android platform. My key responsibilities included:","Collaborating with cross-functional teams to define, design, and ship new features.","Writing clean, maintainable code and ensuring the best possible performance, quality, and responsiveness of applications.","Troubleshooting and debugging to optimize performance.","Staying up-to-date with the latest industry trends and technologies to ensure our applications remain current and competitive."," Participating in code reviews to maintain code quality and share knowledge with the team."],q),B.ba,"Akaar IT Limited","September 2022","Sector-3, Uttara, Dhaka","April 2021","Mobile App Developer"),A.Lb(A.a(["This role was pivotal in my journey, providing me with the opportunity to collaborate with cross-functional teams and adapt to a structured workplace setting, It was a great journey with Zamzam Digital Ltd."],q),B.ba,"Zamzam Digital Limited","March 2021","Mirpur-10, Dhaka-1216","December 2020","Android App Developer")],A.a6("p<zb>"))})
 s($,"aUQ","aDf",()=>A.axc(B.dj,A.a([A.oN(4294962386),A.oN(4294751903)],t.W),B.di,null,B.R))
 s($,"aUR","aDg",()=>A.axc(B.dj,A.a([A.oN(4289327583),A.oN(4279221179)],t.W),B.di,null,B.R))
 r($,"aUO","aDd",()=>A.oN(4282730078))
